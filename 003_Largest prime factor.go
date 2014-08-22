@@ -1,14 +1,12 @@
 package main
 
-import ("fmt" 
-		"math")
-
+import "fmt" 
+		
 func main() {
  
  	num := 600851475143
- 	limit := int(math.Sqrt(float64(num)))
 
-	for i := 2; i < limit; i++ {
+	for i := 2; i <= num; i++ {
 		for num % i == 0 {
 			num /= i
 		}

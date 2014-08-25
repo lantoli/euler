@@ -9,6 +9,7 @@ func main() {
 		for div := 2; div <= n; div++ {
 			if x % div != 0 {
 				good = false
+				break;
 			}
 		}
 		if good {

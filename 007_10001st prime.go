@@ -1,10 +1,13 @@
 package main
 
 import "fmt"
-
+	 
 func IsPrime(prevPrimes []int, candidate int) bool {
 	for _, prime := range prevPrimes {
-		if candidate % prime == 0 {
+		if prime * prime > candidate {
+			return true
+		}
+		if candidate % prime == 0  {
 			return false
 		}
 	}
